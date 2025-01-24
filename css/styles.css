@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: block;
+    background-color: #6d6d6d;
+    color: #fff;
+    width: 100%; /* 画面幅いっぱいに調整 */
+    max-width: 100%;
+    padding: 0; /* 左右の余白を削除 */
+}
+
+header {
+    background-color: #000;
+    padding: 10px 0;
+    width: 100vw; /* ビューポート幅いっぱい */
+    position: relative;
+    left: 0;
+    right: 0;
+    box-sizing: border-box; /* パディングを含めた幅計算 */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 50px;
+    gap: 400px;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    font-size: 36px;
+    gap: 50px;
+}
+
+main {
+    background: rgba(34, 34, 34, 0.87);
+    padding: 55px;
+    flex-direction: column;
+    align-items: center;
+    width: 1100px;
+    margin: auto; /* main中央 */
+}
+
+#profile, #works, #skill, #contact {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 148px;
+    line-height: 35px;
+}
+
+.profile-image {
+    width: auto;
+}
+
+.profile-info {
+    font-size: 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#works .works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 0;
+    margin: 0 auto;
+}
+
+.work-item {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.work-item img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.work-item p {
+    margin: 10px 0 0;
+    font-size: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+}
+
+.skills p {
+    font-size: 20px;
+}
+
+.skills div {
+    text-align: center;
+}
+
+.skills-img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#contact {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
